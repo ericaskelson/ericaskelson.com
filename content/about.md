@@ -31,11 +31,11 @@ See below for a few author recommendations painfully excerpted from the much lon
 
 ### Favorite fantasy authors
  - J.R.R. Tolkien
- - Susanna Clark
+ - Susanna Clarke
  - Patrick Rothfuss
  - R. Scott Bakker
  - Scott Lynch
 
 ## Why This Website
 
-I bought this *domain* to have a little corner of the internet that is truly my own. But I'd be lying if I didn't credit [Claude Code](https://code.claude.com/docs/en/overview) with the generation of the backbone of this site in detail - the power of these AI tools is no less remarkable than the speed at which they are improving. 
+I bought this *domain* to have a little corner of the internet that is truly my own. But I'd be lying if I didn't credit [Claude Code](https://code.claude.com/docs/en/overview) with building most of this site - the power of these AI tools is no less remarkable than the speed at which they are improving. 
