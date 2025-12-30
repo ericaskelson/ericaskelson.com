@@ -25,6 +25,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 <body>
     <nav class="nav">
@@ -41,56 +42,9 @@
 
     <main class="main">
         <section class="resume-section">
-            <div class="resume-header">
-                <h1>About Me</h1>
-                <p class="hero-description" style="margin-top: 1rem;">
-                    Beyond the spreadsheets and mortality tables
-                </p>
-            </div>
-
-            <div class="resume-content">
-                <h2>The Short Version</h2>
-                <p>
-                    I'm an actuary based in Birmingham, Alabama. By day, I work on life insurance valuation
-                    at Protective Life. Outside of work, I'm passionate about finding ways to make complex
-                    processes simpler and more elegant.
-                </p>
-
-                <h2>What Drives Me</h2>
-                <p>
-                    I believe that the best solutions are often the simplest ones. Whether it's automating
-                    a tedious calculation, building a training program, or explaining actuarial concepts to
-                    non-actuaries, I'm always looking for ways to reduce complexity and increase clarity.
-                </p>
-                <p>
-                    My favorite projects are the ones where I can take something that "has always been done this way"
-                    and find a better approach. Introducing Git version control to actuarial model management
-                    was one of those projects that I'm particularly proud of.
-                </p>
-
-                <h2>Interests</h2>
-                <p>
-                    <em>This section is a work in progress. Check back soon for more about what I do
-                    when I'm not calculating reserves.</em>
-                </p>
-                <!--
-                Suggestions for content to add:
-                - Hobbies and interests
-                - Books you're reading
-                - Side projects
-                - Places you've traveled
-                - Music, sports, cooking, etc.
-                -->
-
-                <h2>Why This Website</h2>
-                <p>
-                    I built this site to have a home on the internet that I control. In an age of social media
-                    platforms that come and go, there's something appealing about having your own corner of the web.
-                </p>
-                <p>
-                    It also gave me an excuse to learn a bit more about web development, which turns out to be
-                    quite different from the SQL and Excel I use day-to-day.
-                </p>
+            <div class="resume-content" id="about-content">
+                <!-- Markdown content will be loaded here -->
+                <p style="text-align: center; color: var(--color-text-muted);">Loading...</p>
             </div>
         </section>
     </main>
@@ -98,5 +52,20 @@
     <footer class="footer">
         <p>&copy; 2025 Eric Askelson. All rights reserved.</p>
     </footer>
+    <script>
+        // Fetch and render the markdown about page
+        fetch('content/about.md')
+            .then(response => {
+                if (!response.ok) throw new Error('About page not found');
+                return response.text();
+            })
+            .then(markdown => {
+                document.getElementById('about-content').innerHTML = marked.parse(markdown);
+            })
+            .catch(error => {
+                document.getElementById('about-content').innerHTML =
+                    '<p style="text-align: center; color: var(--color-text-muted);">About content coming soon.</p>';
+            });
+    </script>
 </body>
 </html>
