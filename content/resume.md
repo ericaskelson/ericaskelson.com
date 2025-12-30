@@ -3,7 +3,7 @@
 **Director Actuarial** | Protective Life | Birmingham, Alabama
 *Last updated: December 2025*
 
-[LinkedIn](https://www.linkedin.com/in/eric-askelson-asa-maaa-1a304855/) | [SOA Directory](https://www.actuarialdirectory.org/?searchType=11&discloseId=uNJGDoBmNQ3t1rTtCoeemQ%3D%3D) | [eric.askelson@protective.com](mailto:eric.askelson@protective.com) | [eraskelson@gmail.com](mailto:eraskelson@gmail.com) | (205) 937-4151
+[LinkedIn](https://www.linkedin.com/in/eric-askelson-asa-maaa-1a304855/) | [Actuarial Directory](https://www.actuarialdirectory.org/?searchType=11&discloseId=uNJGDoBmNQ3t1rTtCoeemQ%3D%3D) | [eric.askelson@protective.com](mailto:eric.askelson@protective.com) | [eraskelson@gmail.com](mailto:eraskelson@gmail.com) | (205) 937-4151
 
 ---
 
