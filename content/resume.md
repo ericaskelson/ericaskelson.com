@@ -17,42 +17,38 @@ Actuary with 12+ years of experience at Protective Life, progressing from actuar
 ### Protective Life Corporation
 *Birmingham, Alabama* | June 2013 – Present
 
-#### Universal Life Valuation | 2021 – Present
-**Director Actuarial**
+#### **Universal Life Valuation | 2021 – Present | Director Actuarial**
 
-Led valuation team while maintaining hands-on technical contributions. Managed team of 3–5 including actuarial students and technical experts.
+Led subset of UL valuation team while maintaining hands-on technical contributions. Managed team of 3–5 including actuarial students and technical experts.
 
-- **LDTI Implementation:** Led Universal Life LDTI implementation—built model changes, developed testing framework, coordinated cross-functional team for reporting readiness
-- **Training Program:** Created ~20-session annual training curriculum covering GAAP/Stat calculations, Excel, SQL, PowerQuery, Git, and PolySystems; evolved delivery model so rotating students progress from attendee to presenter
-- **Department-Wide Tech Training:** Joined tech working group and launched monthly technical training sessions for full department (~90 people)
 - **Financial Analysis:** Expanded experience measurement tool and took prominent role in explaining UL earnings drivers to leadership
+- **LDTI Implementation:** Led Universal Life LDTI implementation for valuation - built model changes, developed testing framework, coordinated cross-functional team for reporting readiness
+- **Training Program:** Created ~20-session annual training curriculum covering GAAP/Stat calculations, Excel, SQL, PowerQuery, Git, and PolySystems; evolved delivery model so rotating students progress from attendee to presenter; expanded to monthly technical training sessions for full department (roughly 90 people)
 - **People Development:** Focused on career development through 1:1 mentoring across subteam and broader department
 
-#### Traditional Life Valuation | 2018 – 2020
-**Actuarial Assistant III**
+#### **Traditional Life Valuation | 2018 – 2020 | Actuarial Assistant III**
 
 Extended technical innovations to new product line while deepening financial reporting expertise.
 
-- Extended Git version control implementation to Traditional Life PolySystems models
-- Built PowerQuery dashboard tracking model and assumption update impacts
-- Developed GAAP and Statutory financial impact explanations for quarterly reporting
+- **Version Control Evangelist:** Extended Git version control implementation to Traditional Life PolySystems models
+- **Report Automation:** Built PowerQuery dashboard tracking model and assumption update impacts
+- **Traditional Life Financial Analysis:** Developed GAAP and Statutory financial impact explanations for quarterly reporting
 
-#### Universal Life Valuation | 2013 – 2018
-**Actuarial Assistant II**
+#### **Universal Life Valuation | 2013 – 2018 | Actuarial Assistant II**
 
 Built foundational actuarial skills while driving automation and process improvement initiatives.
 
+- **Foundational Skills:** Developed deep expertise in reinsurance modeling, accounting, and Legacy GAAP (FAS97), as well as SQL, Excel, and VBA
 - **SQL True-Up Process:** Designed and built novel SQL process to ingest data from general ledger and PolySystems valuation software, automating FAS97 true-up calculations
-- **Experience Measurement:** Implemented variance analysis tool decomposing experience into mortality, non-death terminations, and other drivers—enabled clear communication of results to leadership
-- **Version Control Pioneer:** Researched and implemented Git for actuarial model change tracking; developed gitignore configurations, diff filters, best-practice documentation, and training program for PolySystems users
-- Developed deep expertise in reinsurance modeling, accounting, and Legacy GAAP (FAS97)
+- **Experience Measurement:** Implemented variance analysis tool decomposing experience into mortality, non-death terminations, and other drivers - enabled clear communication of results to leadership
+- **Version Control Pioneer:** Researched and implemented Git for actuarial model change tracking; developed gitignore configurations, clean/smudge filters, best-practice documentation, and training program for PolySystems users
 
 ---
 
 ### University of Alabama at Birmingham
 *Birmingham, Alabama*
 
-#### Teaching Assistant, Mathematics Department | Aug 2012 – May 2013
+#### **Mathematics Department | Aug 2012 – May 2013 | Teaching Assistant**
 
 - Tutored students in Algebra, Calculus, Differential Equations, Linear Algebra, and Abstract Algebra
 - Proctored examinations for undergraduate mathematics courses

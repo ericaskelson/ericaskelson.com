@@ -1,0 +1,10 @@
+% Custom spacing for resume PDF
+\usepackage{titlesec}
+
+% Add space after h4 headers (#### in markdown -> \paragraph in LaTeX)
+\titlespacing*{\paragraph}{0pt}{1em}{0.5em}
+\titlespacing*{\subparagraph}{0pt}{1em}{0.5em}
+
+% Ensure paragraphs after headers have proper spacing
+\titleformat{\paragraph}[hang]{\normalfont\normalsize\bfseries}{\theparagraph}{1em}{}
+\titleformat{\subparagraph}[hang]{\normalfont\normalsize\bfseries}{\thesubparagraph}{1em}{}

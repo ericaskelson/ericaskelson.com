@@ -18,6 +18,8 @@ set OUTFILE=content\Eric_Askelson_Resume_%DATESTAMP%.pdf
     -V fontsize=11pt ^
     -V colorlinks=true ^
     -V linkcolor=blue ^
+    -V parskip=0.5em ^
+    -H content/resume-header.tex ^
     --metadata title=""
 
 if %ERRORLEVEL% EQU 0 (
