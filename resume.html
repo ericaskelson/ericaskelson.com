@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume | Eric Askelson</title>
+    <meta name="description" content="Eric Askelson's professional resume and experience.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
+    <nav class="nav">
+        <div class="nav-content">
+            <a href="index.html" class="nav-logo">EA</a>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="resume.html" class="nav-link active">Resume</a>
+                <a href="blog/index.html" class="nav-link">Blog</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="main">
+        <section class="resume-section">
+            <div class="resume-header">
+                <h1>Resume</h1>
+                <a href="content/resume.pdf" class="resume-download" download>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                        <polyline points="7 10 12 15 17 10"></polyline>
+                        <line x1="12" y1="15" x2="12" y2="3"></line>
+                    </svg>
+                    Download PDF
+                </a>
+            </div>
+            <div class="resume-content" id="resume-content">
+                <!-- Markdown content will be loaded here -->
+                <p style="text-align: center; color: var(--color-text-muted);">Loading resume...</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2025 Eric Askelson. All rights reserved.</p>
+    </footer>
+    <script>
+        // Fetch and render the markdown resume
+        fetch('content/resume.md')
+            .then(response => {
+                if (!response.ok) throw new Error('Resume not found');
+                return response.text();
+            })
+            .then(markdown => {
+                document.getElementById('resume-content').innerHTML = marked.parse(markdown);
+            })
+            .catch(error => {
+                document.getElementById('resume-content').innerHTML =
+                    '<p style="text-align: center; color: var(--color-text-muted);">Resume content coming soon.</p>';
+            });
+    </script>
+</body>
+</html>
