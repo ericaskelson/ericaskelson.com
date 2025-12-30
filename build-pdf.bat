@@ -24,9 +24,9 @@ if %ERRORLEVEL% EQU 0 (
     echo.
     echo Success! PDF created: %OUTFILE%
 
-    :: Also create a copy as resume.pdf for the website download link
-    copy /Y %OUTFILE% content\resume.pdf >nul
-    echo Also copied to: content\resume.pdf
+    :: Also create a copy for the website download link
+    copy /Y %OUTFILE% content\Eric_Askelson_Resume.pdf >nul
+    echo Also copied to: content\Eric_Askelson_Resume.pdf
 ) else (
     echo.
     echo Error generating PDF.
