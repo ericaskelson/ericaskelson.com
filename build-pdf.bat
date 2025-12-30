@@ -5,8 +5,14 @@ echo.
 set PANDOC="%LOCALAPPDATA%\Pandoc\pandoc.exe"
 set PDFLATEX="%LOCALAPPDATA%\Programs\MiKTeX\miktex\bin\x64\pdflatex.exe"
 
+:: Generate date string (YYYY-MM-DD format)
+for /f "tokens=2 delims==" %%I in ('wmic os get localdatetime /value') do set datetime=%%I
+set DATESTAMP=%datetime:~0,4%-%datetime:~4,2%-%datetime:~6,2%
+
+set OUTFILE=content\Eric_Askelson_Resume_%DATESTAMP%.pdf
+
 %PANDOC% content/resume.md ^
-    -o content/resume.pdf ^
+    -o %OUTFILE% ^
     --pdf-engine=%PDFLATEX% ^
     -V geometry:margin=0.75in ^
     -V fontsize=11pt ^
@@ -16,10 +22,14 @@ set PDFLATEX="%LOCALAPPDATA%\Programs\MiKTeX\miktex\bin\x64\pdflatex.exe"
 
 if %ERRORLEVEL% EQU 0 (
     echo.
-    echo Success! PDF created at content/resume.pdf
+    echo Success! PDF created: %OUTFILE%
+
+    :: Also create a copy as resume.pdf for the website download link
+    copy /Y %OUTFILE% content\resume.pdf >nul
+    echo Also copied to: content\resume.pdf
 ) else (
     echo.
-    echo Error generating PDF. You may need to restart your terminal for MiKTeX to be in PATH.
+    echo Error generating PDF.
 )
 
 pause
