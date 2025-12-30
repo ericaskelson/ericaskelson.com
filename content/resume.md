@@ -3,7 +3,7 @@
 **Director Actuarial** | Protective Life
 Birmingham, Alabama
 
-[LinkedIn](https://www.linkedin.com/in/eric-askelson-asa-maaa-1a304855/) | [SOA Directory](https://www.actuarialdirectory.org/?searchType=11&discloseId=uNJGDoBmNQ3t1rTtCoeemQ%3D%3D) | [eric.askelson@protective.com](mailto:eric.askelson@protective.com)
+[LinkedIn](https://www.linkedin.com/in/eric-askelson-asa-maaa-1a304855/) | [SOA Directory](https://www.actuarialdirectory.org/?searchType=11&discloseId=uNJGDoBmNQ3t1rTtCoeemQ%3D%3D) | [eric.askelson@protective.com](mailto:eric.askelson@protective.com) | [eraskelson@gmail.com](mailto:eraskelson@gmail.com) | (205) 937-4151
 
 ---
 
@@ -70,16 +70,6 @@ GPA: 3.9 | Specialization: Analysis, Probability & Statistics
 **University of Alabama at Birmingham** | 2008 – 2012
 GPA: 4.0 | Summa Cum Laude | Honors in Mathematics | Presidential Honors
 
-**Undergraduate Thesis:** "Distribution of Spiral Point Sets on Surfaces of Revolution"
-Mentor: Dr. Gilbert Weinstein
-
----
-
-## Credentials
-
-- **ASA** – Associate of the Society of Actuaries
-- **MAAA** – Member of the American Academy of Actuaries
-
 ---
 
 ## Technical Skills
@@ -87,11 +77,3 @@ Mentor: Dr. Gilbert Weinstein
 **Languages & Tools:** SQL, PowerQuery, Power BI, Excel/VBA, Git
 **Actuarial Platforms:** PolySystems
 **Areas of Expertise:** Life insurance valuation, LDTI, FAS97, reinsurance modeling, experience analysis, process automation
-
----
-
-## Contact
-
-- **Professional:** [eric.askelson@protective.com](mailto:eric.askelson@protective.com)
-- **Personal:** [eraskelson@gmail.com](mailto:eraskelson@gmail.com)
-- **Phone:** (205) 937-4151
