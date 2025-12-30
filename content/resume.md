@@ -1,7 +1,6 @@
 # Eric Askelson, ASA, MAAA
 
 **Director Actuarial** | Protective Life | Birmingham, Alabama
-*Last updated: December 2025*
 
 [LinkedIn](https://www.linkedin.com/in/eric-askelson-asa-maaa-1a304855/) | [Actuarial Directory](https://www.actuarialdirectory.org/?searchType=11&discloseId=uNJGDoBmNQ3t1rTtCoeemQ%3D%3D) | [eric.askelson@protective.com](mailto:eric.askelson@protective.com) | [eraskelson@gmail.com](mailto:eraskelson@gmail.com) | (205) 937-4151
 
@@ -77,3 +76,7 @@ GPA: 4.0 | Summa Cum Laude | Honors in Mathematics | Presidential Honors
 **Languages & Tools:** SQL, PowerQuery, Power BI, Excel/VBA, Git
 **Actuarial Platforms:** PolySystems
 **Areas of Expertise:** Life insurance valuation, LDTI, FAS97, reinsurance modeling, experience analysis, process automation
+
+---
+
+*Last updated: December 2025*
