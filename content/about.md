@@ -1,9 +1,3 @@
-# About Me
-
-*Beyond the spreadsheets*
-
----
-
 ## The Short Version
 
 I'm an actuary based in Birmingham, Alabama. By day, I work on life insurance valuation at Protective Life. Outside of work, I'm an inveterate reader of fantasy and science fiction novels, especially those focused on artificial intelligence and the origin of qualia ("consciousness"). Of course these days, one doesn't need to read a novel to be confronted by similar questions! 

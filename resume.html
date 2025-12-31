@@ -25,7 +25,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
-    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 <body>
     <nav class="nav">
@@ -35,7 +34,7 @@
                 <a href="index.html" class="nav-link">Home</a>
                 <a href="about.html" class="nav-link">About</a>
                 <a href="resume.html" class="nav-link active">Resume</a>
-                <a href="blog/index.html" class="nav-link">Blog</a>
+                <!-- BLOG_LINK <a href="blog/index.html" class="nav-link">Blog</a> -->
             </div>
         </div>
     </nav>
@@ -54,8 +53,62 @@
                 </a>
             </div>
             <div class="resume-content" id="resume-content">
-                <!-- Markdown content will be loaded here -->
-                <p style="text-align: center; color: var(--color-text-muted);">Loading resume...</p>
+                <h1>Eric Askelson, ASA, MAAA</h1>
+<p><strong>Director Actuarial</strong> | Protective Life | Birmingham, Alabama</p>
+<p><a href="https://www.linkedin.com/in/eric-askelson-asa-maaa-1a304855/">LinkedIn</a> | <a href="https://www.actuarialdirectory.org/?searchType=11&amp;discloseId=uNJGDoBmNQ3t1rTtCoeemQ%3D%3D">Actuarial Directory</a> | <a href="mailto:eric.askelson@protective.com">eric.askelson@protective.com</a> | <a href="mailto:eraskelson@gmail.com">eraskelson@gmail.com</a> | (205) 937-4151</p>
+<hr />
+<h2>Professional Summary</h2>
+<p>Actuary with 12+ years of experience at Protective Life, progressing from actuarial student to Director. Combines deep technical expertise in valuation and financial reporting with a passion for automation, process improvement, and developing talent. Known for building scalable training programs and introducing modern development practices to actuarial workflows.</p>
+<hr />
+<h2>Experience</h2>
+<h3>Protective Life Corporation</h3>
+<p><em>Birmingham, Alabama</em> | June 2013 – Present</p>
+<h4><strong>Universal Life Valuation | 2021 – Present | Director Actuarial</strong></h4>
+<p>Led subset of UL valuation team while maintaining hands-on technical contributions. Managed team of 3–5 including actuarial students and technical experts.</p>
+<ul>
+<li><strong>Financial Analysis:</strong> Expanded experience measurement tool and took prominent role in explaining UL earnings drivers to leadership</li>
+<li><strong>LDTI Implementation:</strong> Led Universal Life LDTI implementation for valuation - built model changes, developed testing framework, coordinated cross-functional team for reporting readiness</li>
+<li><strong>Training Program:</strong> Created ~20-session annual training curriculum covering GAAP/Stat calculations, Excel, SQL, PowerQuery, Git, and PolySystems; evolved delivery model so rotating students progress from attendee to presenter; expanded to monthly technical training sessions for full department (roughly 90 people)</li>
+<li><strong>People Development:</strong> Focused on career development through 1:1 mentoring across subteam and broader department</li>
+</ul>
+<h4><strong>Traditional Life Valuation | 2018 – 2020 | Actuarial Assistant III</strong></h4>
+<p>Extended technical innovations to new product line while deepening financial reporting expertise.</p>
+<ul>
+<li><strong>Version Control Evangelist:</strong> Extended Git version control implementation to Traditional Life PolySystems models</li>
+<li><strong>Report Automation:</strong> Built PowerQuery dashboard tracking model and assumption update impacts</li>
+<li><strong>Traditional Life Financial Analysis:</strong> Developed GAAP and Statutory financial impact explanations for quarterly reporting</li>
+</ul>
+<h4><strong>Universal Life Valuation | 2013 – 2018 | Actuarial Assistant II</strong></h4>
+<p>Built foundational actuarial skills while driving automation and process improvement initiatives.</p>
+<ul>
+<li><strong>Foundational Skills:</strong> Developed deep expertise in reinsurance modeling, accounting, and Legacy GAAP (FAS97), as well as SQL, Excel, and VBA</li>
+<li><strong>SQL True-Up Process:</strong> Designed and built novel SQL process to ingest data from general ledger and PolySystems valuation software, automating FAS97 true-up calculations</li>
+<li><strong>Experience Measurement:</strong> Implemented variance analysis tool decomposing experience into mortality, non-death terminations, and other drivers - enabled clear communication of results to leadership</li>
+<li><strong>Version Control Pioneer:</strong> Researched and implemented Git for actuarial model change tracking; developed gitignore configurations, clean/smudge filters, best-practice documentation, and training program for PolySystems users</li>
+</ul>
+<hr />
+<h3>University of Alabama at Birmingham</h3>
+<p><em>Birmingham, Alabama</em></p>
+<h4><strong>Mathematics Department | Aug 2012 – May 2013 | Teaching Assistant</strong></h4>
+<ul>
+<li>Tutored students in Algebra, Calculus, Differential Equations, Linear Algebra, and Abstract Algebra</li>
+<li>Proctored examinations for undergraduate mathematics courses</li>
+</ul>
+<hr />
+<h2>Education</h2>
+<h3>Master of Science in Mathematics</h3>
+<p><strong>University of Alabama at Birmingham</strong> | 2012 – 2013
+GPA: 3.9 | Specialization: Analysis, Probability &amp; Statistics</p>
+<h3>Bachelor of Science in Mathematics</h3>
+<p><strong>University of Alabama at Birmingham</strong> | 2008 – 2012
+GPA: 4.0 | Summa Cum Laude | Honors in Mathematics | Presidential Honors</p>
+<hr />
+<h2>Technical Skills</h2>
+<p><strong>Languages &amp; Tools:</strong> SQL, PowerQuery, Power BI, Excel/VBA, Git
+<strong>Actuarial Platforms:</strong> PolySystems
+<strong>Areas of Expertise:</strong> Life insurance valuation, LDTI, FAS97, reinsurance modeling, experience analysis, process automation</p>
+<hr />
+<p><em>Last updated: December 2025</em></p>
             </div>
         </section>
     </main>
@@ -63,20 +116,5 @@
     <footer class="footer">
         <p>&copy; 2025 Eric Askelson. All rights reserved.</p>
     </footer>
-    <script>
-        // Fetch and render the markdown resume
-        fetch('content/resume.md')
-            .then(response => {
-                if (!response.ok) throw new Error('Resume not found');
-                return response.text();
-            })
-            .then(markdown => {
-                document.getElementById('resume-content').innerHTML = marked.parse(markdown);
-            })
-            .catch(error => {
-                document.getElementById('resume-content').innerHTML =
-                    '<p style="text-align: center; color: var(--color-text-muted);">Resume content coming soon.</p>';
-            });
-    </script>
 </body>
 </html>

@@ -25,7 +25,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
-    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 <body>
     <nav class="nav">
@@ -35,16 +34,44 @@
                 <a href="index.html" class="nav-link">Home</a>
                 <a href="about.html" class="nav-link active">About</a>
                 <a href="resume.html" class="nav-link">Resume</a>
-                <a href="blog/index.html" class="nav-link">Blog</a>
+                <!-- BLOG_LINK <a href="blog/index.html" class="nav-link">Blog</a> -->
             </div>
         </div>
     </nav>
 
     <main class="main">
         <section class="resume-section">
+            <div class="resume-header">
+                <h1>About Me</h1>
+            </div>
             <div class="resume-content" id="about-content">
-                <!-- Markdown content will be loaded here -->
-                <p style="text-align: center; color: var(--color-text-muted);">Loading...</p>
+                <h2>The Short Version</h2>
+<p>I&rsquo;m an actuary based in Birmingham, Alabama. By day, I work on life insurance valuation at Protective Life. Outside of work, I&rsquo;m an inveterate reader of fantasy and science fiction novels, especially those focused on artificial intelligence and the origin of qualia (&ldquo;consciousness&rdquo;). Of course these days, one doesn&rsquo;t need to read a novel to be confronted by similar questions! </p>
+<h2>What Drives Me</h2>
+<p>The complexity of actuarial work is often strikingly far from the global minimum it should strive for, and this is not always justified by the value or insight that our work provides. My career goal is to push closer to that Pareto frontier and, on rare occasions, expand it. </p>
+<p>Whether it&rsquo;s automating a tedious calculation, building a training program, or explaining actuarial concepts to non-actuaries, I&rsquo;m always looking for ways to reduce complexity and increase clarity.</p>
+<p>My favorite projects are those where I can take something that &ldquo;has always been done this way&rdquo; and find a better approach. Introducing Git version control to actuarial model management was one of those projects that I&rsquo;m particularly proud of. </p>
+<h2>Interests</h2>
+<p>In my free time, I&rsquo;m most likely to be found reading a book - if I&rsquo;m not experimenting with the most recent LLM models and tools, playing piano, or fighting a decades-long addiction to <em>Civilization VI</em> and her predecessors. </p>
+<p>See below for a few author recommendations painfully excerpted from the much longer list I could regale you with.</p>
+<h3>Favorite science fiction authors</h3>
+<ul>
+<li>Greg Egan</li>
+<li>Iain M. Banks</li>
+<li>Neal Stephenson</li>
+<li>Frank Herbert</li>
+<li>Cixin Liu</li>
+</ul>
+<h3>Favorite fantasy authors</h3>
+<ul>
+<li>J.R.R. Tolkien</li>
+<li>Susanna Clarke</li>
+<li>Patrick Rothfuss</li>
+<li>R. Scott Bakker</li>
+<li>Scott Lynch</li>
+</ul>
+<h2>Why This Website</h2>
+<p>I bought this <em>domain</em> to have a little corner of the internet that is truly my own. But I&rsquo;d be lying if I didn&rsquo;t credit <a href="https://code.claude.com/docs/en/overview">Claude Code</a> with building most of this site - the power of these AI tools is no less remarkable than the speed at which they are improving. </p>
             </div>
         </section>
     </main>
@@ -52,20 +79,5 @@
     <footer class="footer">
         <p>&copy; 2025 Eric Askelson. All rights reserved.</p>
     </footer>
-    <script>
-        // Fetch and render the markdown about page
-        fetch('content/about.md')
-            .then(response => {
-                if (!response.ok) throw new Error('About page not found');
-                return response.text();
-            })
-            .then(markdown => {
-                document.getElementById('about-content').innerHTML = marked.parse(markdown);
-            })
-            .catch(error => {
-                document.getElementById('about-content').innerHTML =
-                    '<p style="text-align: center; color: var(--color-text-muted);">About content coming soon.</p>';
-            });
-    </script>
 </body>
 </html>
