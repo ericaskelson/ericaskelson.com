@@ -22,5 +22,9 @@ Thumbs.db
 dist/
 build/
 
+# API response files
+response.json
+images/response.json
+
 # Dated resume PDFs (we keep resume.pdf for the site, ignore dated copies)
 content/Eric_Askelson_Resume_*.pdf

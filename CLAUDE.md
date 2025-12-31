@@ -43,20 +43,26 @@ Or use `build.bat` which wraps the Python script.
 
 ### Image Assets
 Generated with Nano Banana Pro (Gemini image model). Located in `images/`:
+- `Profile.jpg` - Eric's profile photo (hero section)
 - `bg-watercolor-1.png` - Hero section background (wine/gold watercolor edges)
-- `bg-texture-1.png` - Subtle cream marble texture (About/Resume background)
-- `bg-geometric-1.png` - Gold hexagon pattern on cream (available)
-- `bg-hero-dramatic-1.png` - Bold wine splashes (alternative hero, available)
-- `divider-gold-final.png` - Gold calligraphic flourish (hero divider)
-- `divider-wine-final.png` - Wine line with diamond (section/title divider)
+- `bg-geometric-1.png` - Gold hexagon pattern on cream (About/Resume page background)
+- `divider-gold-delicate.png` - Thin elegant gold line with flourishes (hero divider)
+- `divider-wine-new.png` - Wine colored divider (section/title headers)
 
 **Generating transparent images with Nano Banana:**
 1. Generate on white background (not transparent checkerboard)
 2. Use Python/Pillow to convert white pixels to transparent:
    ```python
-   # threshold=240 catches near-white pixels
-   if r >= threshold and g >= threshold and b >= threshold:
-       pixels[x, y] = (r, g, b, 0)
+   from PIL import Image
+   img = Image.open('image.png').convert('RGBA')
+   pixels = img.load()
+   threshold = 240  # catches near-white pixels
+   for y in range(img.height):
+       for x in range(img.width):
+           r, g, b, a = pixels[x, y]
+           if r >= threshold and g >= threshold and b >= threshold:
+               pixels[x, y] = (r, g, b, 0)
+   img.save('image.png')
    ```
 
 ### PDF Generation Setup
