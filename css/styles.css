@@ -7,10 +7,10 @@
     --color-navy-light: #7a2530;
     --color-cream: #faf8f4;
     --color-cream-dark: #f2ebe0;
-    --color-gold: #b8860b;
-    --color-gold-light: #daa520;
+    --color-gold: #7a5a11;
+    --color-gold-light: #8b6914;
     --color-text: #2d1f20;
-    --color-text-muted: #6b5456;
+    --color-text-muted: #5c4547;
     --color-border: #e0d5c8;
 
     /* Typography */
@@ -94,6 +94,20 @@ a {
 
 a:hover {
     color: var(--color-gold);
+}
+
+/* Focus states for keyboard accessibility */
+a:focus-visible,
+button:focus-visible,
+.link-card:focus-visible,
+.nav-link:focus-visible {
+    outline: 2px solid var(--color-gold);
+    outline-offset: 2px;
+}
+
+.resume-download:focus-visible {
+    outline: 2px solid var(--color-cream);
+    outline-offset: 2px;
 }
 
 /* ================================
@@ -180,15 +194,32 @@ a:hover {
 .hero {
     padding: var(--spacing-xxl) var(--spacing-md);
     text-align: center;
+    position: relative;
     background:
         linear-gradient(to bottom,
             transparent 0%,
-            transparent 70%,
+            transparent 40%,
+            var(--color-cream) 95%),
+        linear-gradient(to right,
+            var(--color-cream) 0%,
+            transparent 10%,
+            transparent 90%,
             var(--color-cream) 100%),
         url('../images/bg-watercolor-1.png');
-    background-size: cover, cover;
-    background-position: center, center;
-    background-repeat: no-repeat, no-repeat;
+    background-size: cover, cover, cover;
+    background-position: center, center, center;
+    background-repeat: no-repeat, no-repeat, no-repeat;
+}
+
+.hero::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    background: linear-gradient(to bottom, transparent, var(--color-cream));
+    pointer-events: none;
 }
 
 .hero-content {
@@ -239,14 +270,57 @@ a:hover {
     margin-bottom: var(--spacing-md);
 }
 
+/* CSS Divider - wine diamond style */
+.divider-wine {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    height: 20px;
+    margin: var(--spacing-xs) auto var(--spacing-md);
+}
+
+.divider-wine::before,
+.divider-wine::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background-color: var(--color-navy);
+}
+
+.divider-wine span {
+    width: 10px;
+    height: 10px;
+    background-color: var(--color-navy);
+    transform: rotate(45deg);
+    margin: 0 8px;
+    flex-shrink: 0;
+}
+
 .hero-divider {
-    width: 400px;
-    height: 60px;
-    background-image: url('../images/divider-gold-delicate.png');
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    height: 20px;
     margin: var(--spacing-sm) auto;
+}
+
+.hero-divider::before,
+.hero-divider::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background-color: var(--color-navy);
+}
+
+.hero-divider span {
+    width: 10px;
+    height: 10px;
+    background-color: var(--color-navy);
+    transform: rotate(45deg);
+    margin: 0 8px;
+    flex-shrink: 0;
 }
 
 .hero-description {
@@ -254,6 +328,17 @@ a:hover {
     color: var(--color-text-muted);
     max-width: 450px;
     margin: 0 auto;
+}
+
+.hero-description a {
+    color: var(--color-navy);
+    text-decoration: underline;
+    text-decoration-color: var(--color-gold);
+    text-underline-offset: 2px;
+}
+
+.hero-description a:hover {
+    color: var(--color-gold);
 }
 
 /* ================================
@@ -269,20 +354,8 @@ a:hover {
     text-align: center;
     font-size: 1.5rem;
     font-weight: 500;
-    margin-bottom: var(--spacing-lg);
+    margin-bottom: var(--spacing-xs);
     color: var(--color-navy);
-}
-
-.section-title::after {
-    content: '';
-    display: block;
-    width: 250px;
-    height: 60px;
-    background-image: url('../images/divider-wine-new.png');
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    margin: var(--spacing-xs) auto 0;
 }
 
 .links-grid {
@@ -388,19 +461,7 @@ a:hover {
     margin-bottom: var(--spacing-xs);
 }
 
-/* Decorative divider after page titles */
-.resume-header h1::after,
-.resume-content > h1:first-child::after {
-    content: '';
-    display: block;
-    width: 250px;
-    height: 60px;
-    background-image: url('../images/divider-wine-new.png');
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    margin: var(--spacing-xs) auto var(--spacing-sm);
-}
+/* Divider spacing after page titles - actual divider is in HTML */
 
 .resume-download {
     display: inline-flex;
