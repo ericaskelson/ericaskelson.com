@@ -264,11 +264,24 @@ html[data-theme="dark"] .theme-toggle .icon-sun {
 
 /* Dark mode background adjustments */
 html[data-theme="dark"] body:has(.resume-section) {
-    background-image: none;
+    background-image: url('../images/bg-geometric-dark.png');
 }
 
 html[data-theme="dark"] .hero {
-    background: var(--color-cream);
+    background:
+        linear-gradient(to bottom,
+            transparent 0%,
+            transparent 40%,
+            var(--color-cream) 95%),
+        linear-gradient(to right,
+            var(--color-cream) 0%,
+            transparent 10%,
+            transparent 90%,
+            var(--color-cream) 100%),
+        url('../images/bg-watercolor-dark.png');
+    background-size: cover, cover, cover;
+    background-position: center, center, center;
+    background-repeat: no-repeat, no-repeat, no-repeat;
 }
 
 /* ================================
