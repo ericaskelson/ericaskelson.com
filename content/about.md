@@ -6,7 +6,7 @@ I'm an actuary based in Birmingham, Alabama. By day, I work on life insurance va
 
 The complexity of actuarial work is often strikingly far from the global minimum it should strive for, and this is not always justified by the value or insight that our work provides. My career goal is to push closer to that Pareto frontier and, on rare occasions, expand it. 
 
-Whether it's automating a tedious calculation, building a training program, or explaining actuarial concepts to non-actuaries, I'm always looking for ways to reduce complexity and increase clarity.
+Whether it's automating an error-prone calculation, building a training program, or explaining actuarial concepts to non-actuaries, I'm always looking for ways to reduce complexity and increase clarity.
 
 My favorite projects are those where I can take something that "has always been done this way" and find a better approach. Introducing Git version control to actuarial model management was one of those projects that I'm particularly proud of. 
 

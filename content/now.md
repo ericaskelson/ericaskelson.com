@@ -4,19 +4,21 @@
 
 ### At Work
 
-Leading actuarial valuation and reporting at Protective Life. Currently focused on:
+Leading a sub-team of the Universal Life actuarial valuation and reporting team at Protective Life. Currently focused on:
 
-- Continuing to improve our LDTI reporting processes
+- 2025 year-end reporting
+- Finalizing and improving our LDTI reporting processes
 - Building automation to reduce manual work and improve accuracy
 - Mentoring junior actuaries and building team capabilities
 
 ### Learning
 
-- Exploring AI-assisted development tools and how they're changing programming workflows
-- Keeping up with developments in life insurance product design and pricing
+- Exploring the use of LLMs to build and improve automation at work, focusing on Copilot in VS Code
+- Exploring the use of LLMs for personal projects, including this website, via Claude Code
+- Building proficiency in PowerShell and Python for scripting
 
 ### Outside Work
 
-- Enjoying time with family in Birmingham
 - Reading (see my [reading list](reading.html) for current picks)
-- Staying active and getting outside when Alabama weather cooperates
+- Building a proof of concept [web RPG](https://inversion-rpg.pages.dev/)
+- Starting a weight training program

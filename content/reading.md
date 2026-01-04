@@ -1,27 +1,15 @@
-A few books I've enjoyed or am currently reading. This isn't comprehensive, just titles worth sharing.
+A few books I've enjoyed or have read this year. This isn't comprehensive, just titles worth sharing from this year. 
 
 ---
 
 ### Currently Reading
 
-- **The Art of Doing Science and Engineering** by Richard Hamming - Insights on how to do great technical work, from one of the legends of computing
-- **Thinking in Systems** by Donella Meadows - A primer on systems thinking that applies well beyond environmental science
+- **If Anyone Builds It, Everyone Dies** by Eliezer Yudkowsky and Nate Soares - So far, a clear distillation of the central thesis of Less Wrong style "rationalism". In general I think recent developments in AI have followed *some* of the predictions of that group, but that the LLM basis for current AI just does not seem susceptible to the same sort of misalignment that their mental models expect. Is doom certain the moment model capabilities exceed some threshold? So far I remain unconvinced.
 
-### Favorites
+- **Defiance of the Fall, Book 16** by JF Brink - Historically a good example of the westernized cultivation novel sub-genre, I have to admit my patience is running out here. (16 books in, perhaps it should have run out a while ago!)
 
-These are books that have stuck with me and influenced how I think:
+### Read in 2026 thus Far
 
-- **Thinking, Fast and Slow** by Daniel Kahneman - The definitive book on cognitive biases and decision-making
-- **The Signal and the Noise** by Nate Silver - On prediction, probability, and why most forecasts fail
-- **Antifragile** by Nassim Nicholas Taleb - On systems that gain from disorder, with obvious applications to insurance and risk
-- **Surely You're Joking, Mr. Feynman!** by Richard Feynman - Entertaining stories from one of the great curious minds
+- **Wolf in White Van** by John Darnielle - Outside my usual zone, but a Christmas gift, and well written. A heavy read, on learning to live with the consequences of a seemingly senseless decision. Effectively reads backwards, from the present day to the original inciting incident.
 
-### On Actuarial Work and Risk
-
-- **Against the Gods: The Remarkable Story of Risk** by Peter L. Bernstein - The history of risk management and probability theory
-- **Fooled by Randomness** by Nassim Nicholas Taleb - On the underestimated role of chance in life and markets
-
-### Fiction Worth Reading
-
-- **Project Hail Mary** by Andy Weir - Hard sci-fi problem-solving at its most enjoyable
-- **Piranesi** by Susanna Clarke - Strange and beautiful
+- **Throne Hunters, Book 4** by Phil Tucker - Tucker consistently rises above the dreck of the "progression fantasy" genre, and Throne Hunters is his second best, losing only to the **Bastion** series. As Jim Butcher has shown for years, wish fulfillment fantasy novels are better the more you torment the protagonist, and there's plenty of that here. 
