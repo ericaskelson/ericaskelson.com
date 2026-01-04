@@ -570,6 +570,16 @@ button:focus-visible,
     margin-bottom: var(--spacing-xs);
 }
 
+/* Last updated text styling */
+.resume-content > p:last-of-type em {
+    display: block;
+    margin-top: var(--spacing-lg);
+    padding-top: var(--spacing-md);
+    border-top: 1px solid var(--color-border);
+    font-size: 0.85rem;
+    color: var(--color-text-muted);
+}
+
 /* ================================
    Blog Styles
    ================================ */
