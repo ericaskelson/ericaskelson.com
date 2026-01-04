@@ -498,6 +498,15 @@ button:focus-visible,
     border-bottom: 1px solid var(--color-border);
 }
 
+/* Name header at top of resume - make it prominent */
+.resume-content > h2:first-child {
+    font-size: 1.75rem;
+    border-bottom: none;
+    padding-bottom: 0;
+    margin-top: 0;
+    margin-bottom: 0.25rem;
+}
+
 .resume-content h2:first-child {
     margin-top: 0;
 }

@@ -1,4 +1,4 @@
-# Eric Askelson, ASA, MAAA
+## Eric Askelson, ASA, MAAA
 
 **Director Actuarial** | Protective Life | Birmingham, Alabama
 
