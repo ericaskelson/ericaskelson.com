@@ -602,6 +602,16 @@ html[data-theme="dark"] .resume-header h1 {
     padding: var(--spacing-xl);
 }
 
+.resume-content a {
+    text-decoration: underline;
+    text-decoration-color: var(--color-gold);
+    text-underline-offset: 2px;
+}
+
+.resume-content a:hover {
+    text-decoration-color: var(--color-navy);
+}
+
 .resume-content h2 {
     font-size: 1.25rem;
     color: var(--color-navy);
