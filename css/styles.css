@@ -2,7 +2,7 @@
    CSS Variables & Theme
    ================================ */
 :root {
-    /* Colors - Warm Wine palette */
+    /* Colors - Warm Wine palette (Light Mode) */
     --color-navy: #5c1a23;
     --color-navy-light: #7a2530;
     --color-cream: #faf8f4;
@@ -12,7 +12,26 @@
     --color-text: #2d1f20;
     --color-text-muted: #5c4547;
     --color-border: #e0d5c8;
+    --color-card-bg: white;
+    --nav-bg: rgba(250, 248, 244, 0.95);
+}
 
+/* Dark Mode Colors */
+html[data-theme="dark"] {
+    --color-navy: #e8b4bc;
+    --color-navy-light: #d4949e;
+    --color-cream: #1a1a1a;
+    --color-cream-dark: #252525;
+    --color-gold: #d4a855;
+    --color-gold-light: #e0b966;
+    --color-text: #e8e4e0;
+    --color-text-muted: #a8a0a0;
+    --color-border: #3a3535;
+    --color-card-bg: #252020;
+    --nav-bg: rgba(26, 26, 26, 0.95);
+}
+
+:root {
     /* Typography */
     --font-display: 'Cormorant Garamond', Georgia, serif;
     --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
@@ -142,7 +161,7 @@ button:focus-visible,
     left: 0;
     right: 0;
     z-index: 100;
-    background-color: rgba(250, 248, 244, 0.95);
+    background-color: var(--nav-bg);
     backdrop-filter: blur(10px);
     border-bottom: 1px solid var(--color-border);
 }
@@ -201,6 +220,55 @@ button:focus-visible,
 .nav-link:hover::after,
 .nav-link.active::after {
     width: 100%;
+}
+
+/* Theme Toggle Button */
+.theme-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: var(--spacing-xs);
+    color: var(--color-text-muted);
+    transition: color var(--transition-fast);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.theme-toggle:hover {
+    color: var(--color-gold);
+}
+
+.theme-toggle svg {
+    width: 20px;
+    height: 20px;
+}
+
+/* Hide moon icon by default (light mode), show sun icon */
+.theme-toggle .icon-moon {
+    display: block;
+}
+
+.theme-toggle .icon-sun {
+    display: none;
+}
+
+/* In dark mode, show sun icon, hide moon icon */
+html[data-theme="dark"] .theme-toggle .icon-moon {
+    display: none;
+}
+
+html[data-theme="dark"] .theme-toggle .icon-sun {
+    display: block;
+}
+
+/* Dark mode background adjustments */
+html[data-theme="dark"] body:has(.resume-section) {
+    background-image: none;
+}
+
+html[data-theme="dark"] .hero {
+    background: var(--color-cream);
 }
 
 /* ================================
@@ -391,7 +459,7 @@ button:focus-visible,
     align-items: center;
     gap: var(--spacing-md);
     padding: var(--spacing-md) var(--spacing-lg);
-    background-color: white;
+    background-color: var(--color-card-bg);
     border: 1px solid var(--color-border);
     border-radius: var(--border-radius-lg);
     transition: all var(--transition-normal);
@@ -506,7 +574,7 @@ button:focus-visible,
 }
 
 .resume-content {
-    background-color: white;
+    background-color: var(--color-card-bg);
     border: 1px solid var(--color-border);
     border-radius: var(--border-radius-lg);
     padding: var(--spacing-xl);
@@ -602,7 +670,7 @@ button:focus-visible,
 .blog-card {
     display: block;
     padding: var(--spacing-lg);
-    background-color: white;
+    background-color: var(--color-card-bg);
     border: 1px solid var(--color-border);
     border-radius: var(--border-radius-lg);
     transition: all var(--transition-normal);
@@ -801,7 +869,7 @@ button:focus-visible,
         top: 100%;
         left: 0;
         right: 0;
-        background-color: rgba(250, 248, 244, 0.98);
+        background-color: var(--nav-bg);
         backdrop-filter: blur(10px);
         flex-direction: column;
         padding: var(--spacing-md);
