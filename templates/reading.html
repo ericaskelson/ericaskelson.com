@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reading | Eric Askelson</title>
+    <meta name="description" content="Books Eric Askelson is reading, has read, and recommends.">
+
+    <!-- Open Graph / Social Sharing -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Reading | Eric Askelson">
+    <meta property="og:description" content="Books Eric Askelson is reading, has read, and recommends.">
+    <meta property="og:url" content="https://ericaskelson.com/reading.html">
+    <meta property="og:image" content="https://ericaskelson.com/images/Profile.jpg">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Reading | Eric Askelson">
+    <meta name="twitter:description" content="Books Eric Askelson is reading, has read, and recommends.">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://ericaskelson.com/reading.html">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <a href="#main-content" class="skip-to-content">Skip to content</a>
+    <nav class="nav">
+        <div class="nav-content">
+            <a href="index.html" class="nav-logo">EA</a>
+            <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="now.html" class="nav-link">Now</a>
+                <a href="resume.html" class="nav-link">Resume</a>
+                <!-- BLOG_LINK <a href="blog/index.html" class="nav-link">Blog</a> -->
+            </div>
+            <button class="theme-toggle" aria-label="Toggle dark mode" title="Toggle dark mode">
+                <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+                </svg>
+                <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="5" />
+                    <line x1="12" y1="1" x2="12" y2="3" />
+                    <line x1="12" y1="21" x2="12" y2="23" />
+                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+                    <line x1="1" y1="12" x2="3" y2="12" />
+                    <line x1="21" y1="12" x2="23" y2="12" />
+                    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+                    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+                </svg>
+            </button>
+        </div>
+    </nav>
+
+    <main class="main" id="main-content">
+        <section class="resume-section">
+            <div class="resume-header">
+                <h1>Reading</h1>
+                <div class="divider-wine"><span></span></div>
+            </div>
+            <div class="resume-content" id="reading-content">
+                {{CONTENT}}
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 Eric Askelson. All rights reserved.</p>
+    </footer>
+    <script>
+        // Mobile nav toggle
+        document.querySelector('.nav-toggle').addEventListener('click', function() {
+            const navLinks = document.querySelector('.nav-links');
+            const isExpanded = this.getAttribute('aria-expanded') === 'true';
+            navLinks.classList.toggle('active');
+            this.setAttribute('aria-expanded', !isExpanded);
+        });
+
+        // Theme toggle
+        (function() {
+            const themeToggle = document.querySelector('.theme-toggle');
+            const html = document.documentElement;
+
+            const savedTheme = localStorage.getItem('theme');
+            const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+            if (savedTheme) {
+                html.setAttribute('data-theme', savedTheme);
+            } else if (systemPrefersDark) {
+                html.setAttribute('data-theme', 'dark');
+            }
+
+            themeToggle.addEventListener('click', function() {
+                const currentTheme = html.getAttribute('data-theme');
+                const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+
+                if (newTheme === 'light') {
+                    html.removeAttribute('data-theme');
+                } else {
+                    html.setAttribute('data-theme', newTheme);
+                }
+
+                localStorage.setItem('theme', newTheme);
+            });
+        })();
+    </script>
+</body>
+</html>
