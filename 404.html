@@ -16,9 +16,15 @@
     <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
+    <a href="#main-content" class="skip-to-content">Skip to content</a>
     <nav class="nav">
         <div class="nav-content">
             <a href="/index.html" class="nav-logo">EA</a>
+            <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
             <div class="nav-links">
                 <a href="/index.html" class="nav-link">Home</a>
                 <a href="/about.html" class="nav-link">About</a>
@@ -28,7 +34,7 @@
         </div>
     </nav>
 
-    <main class="main">
+    <main class="main" id="main-content">
         <section class="hero">
             <div class="hero-content">
                 <h1 class="hero-title" style="font-size: 6rem; margin-bottom: 0.5rem;">404</h1>
@@ -53,5 +59,13 @@
     <footer class="footer">
         <p>&copy; 2026 Eric Askelson. All rights reserved.</p>
     </footer>
+    <script>
+        document.querySelector('.nav-toggle').addEventListener('click', function() {
+            const navLinks = document.querySelector('.nav-links');
+            const isExpanded = this.getAttribute('aria-expanded') === 'true';
+            navLinks.classList.toggle('active');
+            this.setAttribute('aria-expanded', !isExpanded);
+        });
+    </script>
 </body>
 </html>

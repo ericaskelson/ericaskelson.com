@@ -36,6 +36,29 @@
 }
 
 /* ================================
+   Skip to Content (Accessibility)
+   ================================ */
+.skip-to-content {
+    position: absolute;
+    top: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--color-navy);
+    color: var(--color-cream);
+    padding: var(--spacing-sm) var(--spacing-md);
+    border-radius: var(--border-radius);
+    z-index: 1000;
+    text-decoration: none;
+    font-weight: 500;
+    transition: top var(--transition-fast);
+}
+
+.skip-to-content:focus {
+    top: var(--spacing-sm);
+    color: var(--color-cream);
+}
+
+/* ================================
    Reset & Base
    ================================ */
 *, *::before, *::after {
@@ -737,5 +760,154 @@ button:focus-visible,
 
     .link-arrow {
         display: none;
+    }
+}
+
+/* ================================
+   Mobile Hamburger Menu
+   ================================ */
+.nav-toggle {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: var(--spacing-xs);
+    color: var(--color-navy);
+}
+
+.nav-toggle svg {
+    width: 24px;
+    height: 24px;
+}
+
+@media (max-width: 480px) {
+    .nav-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: rgba(250, 248, 244, 0.98);
+        backdrop-filter: blur(10px);
+        flex-direction: column;
+        padding: var(--spacing-md);
+        gap: 0;
+        border-bottom: 1px solid var(--color-border);
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-link {
+        padding: var(--spacing-sm) 0;
+        border-bottom: 1px solid var(--color-border);
+        font-size: 1rem;
+    }
+
+    .nav-link:last-child {
+        border-bottom: none;
+    }
+
+    .nav-link::after {
+        display: none;
+    }
+}
+
+/* ================================
+   Print Styles
+   ================================ */
+@media print {
+    /* Hide non-essential elements */
+    .nav,
+    .footer,
+    .skip-to-content,
+    .resume-download,
+    .divider-wine {
+        display: none !important;
+    }
+
+    /* Reset backgrounds and colors for print */
+    body {
+        background: white !important;
+        background-image: none !important;
+        color: black !important;
+        font-size: 11pt;
+        line-height: 1.4;
+    }
+
+    .main {
+        padding-top: 0 !important;
+    }
+
+    /* Resume-specific print styles */
+    .resume-section {
+        padding: 0 !important;
+        max-width: none !important;
+    }
+
+    .resume-header {
+        margin-bottom: 1rem !important;
+    }
+
+    .resume-header h1 {
+        font-size: 18pt !important;
+        margin-bottom: 0.5rem !important;
+    }
+
+    .resume-content {
+        background: none !important;
+        border: none !important;
+        padding: 0 !important;
+        box-shadow: none !important;
+    }
+
+    .resume-content h2 {
+        font-size: 14pt !important;
+        margin-top: 1rem !important;
+        margin-bottom: 0.5rem !important;
+        page-break-after: avoid;
+    }
+
+    .resume-content h3 {
+        font-size: 12pt !important;
+        page-break-after: avoid;
+    }
+
+    .resume-content h4 {
+        font-size: 11pt !important;
+        page-break-after: avoid;
+    }
+
+    .resume-content ul {
+        page-break-inside: avoid;
+    }
+
+    /* Ensure links are visible in print */
+    a {
+        color: black !important;
+        text-decoration: underline;
+    }
+
+    /* Show URLs after links */
+    .resume-content a[href^="http"]::after {
+        content: " (" attr(href) ")";
+        font-size: 9pt;
+        color: #666;
+    }
+
+    /* Avoid page breaks in awkward places */
+    h1, h2, h3, h4 {
+        page-break-after: avoid;
+    }
+
+    p, li {
+        orphans: 3;
+        widows: 3;
     }
 }
