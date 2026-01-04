@@ -149,8 +149,10 @@ def update_blog_links(has_posts):
     files_to_update = [
         (ROOT / "index.html", 'href="blog/index.html"'),
         (ROOT / "about.html", 'href="blog/index.html"'),
+        (ROOT / "now.html", 'href="blog/index.html"'),
         (ROOT / "resume.html", 'href="blog/index.html"'),
         (TEMPLATES / "about.html", 'href="blog/index.html"'),
+        (TEMPLATES / "now.html", 'href="blog/index.html"'),
         (TEMPLATES / "resume.html", 'href="blog/index.html"'),
         (BLOG_TEMPLATE, 'href="../index.html"'),  # Blog template uses relative path
     ]
@@ -283,6 +285,7 @@ def build_pages():
 
     pages = [
         ('about.md', 'about.html'),
+        ('now.md', 'now.html'),
         ('resume.md', 'resume.html'),
     ]
 

@@ -3,49 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>POST_TITLE | Eric Askelson</title>
-    <meta name="description" content="POST_EXCERPT">
+    <title>Now | Eric Askelson</title>
+    <meta name="description" content="What Eric Askelson is focused on right now - current projects, interests, and priorities.">
 
     <!-- Open Graph / Social Sharing -->
-    <meta property="og:type" content="article">
-    <meta property="og:title" content="POST_TITLE | Eric Askelson">
-    <meta property="og:description" content="POST_EXCERPT">
-    <meta property="og:url" content="https://ericaskelson.com/blog/posts/POST_SLUG.html">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Now | Eric Askelson">
+    <meta property="og:description" content="What Eric Askelson is focused on right now - current projects, interests, and priorities.">
+    <meta property="og:url" content="https://ericaskelson.com/now.html">
+    <meta property="og:image" content="https://ericaskelson.com/images/Profile.jpg">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="POST_TITLE | Eric Askelson">
-    <meta name="twitter:description" content="POST_EXCERPT">
+    <meta name="twitter:title" content="Now | Eric Askelson">
+    <meta name="twitter:description" content="What Eric Askelson is focused on right now - current projects, interests, and priorities.">
 
     <!-- Canonical URL -->
-    <link rel="canonical" href="https://ericaskelson.com/blog/posts/POST_SLUG.html">
+    <link rel="canonical" href="https://ericaskelson.com/now.html">
 
     <!-- Favicon -->
-    <link rel="icon" type="image/svg+xml" href="../../images/favicon.svg">
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../../css/styles.css">
-    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <a href="#main-content" class="skip-to-content">Skip to content</a>
     <nav class="nav">
         <div class="nav-content">
-            <a href="../../index.html" class="nav-logo">EA</a>
+            <a href="index.html" class="nav-logo">EA</a>
             <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
                 </svg>
             </button>
             <div class="nav-links">
-                <a href="../../index.html" class="nav-link">Home</a>
-                <a href="../../about.html" class="nav-link">About</a>
-                <a href="../../now.html" class="nav-link">Now</a>
-                <a href="../../resume.html" class="nav-link">Resume</a>
-                <a href="../index.html" class="nav-link active">Blog</a>
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="now.html" class="nav-link active">Now</a>
+                <a href="resume.html" class="nav-link">Resume</a>
+                <!-- BLOG_LINK <a href="blog/index.html" class="nav-link">Blog</a> -->
             </div>
             <button class="theme-toggle" aria-label="Toggle dark mode" title="Toggle dark mode">
                 <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
@@ -67,21 +67,15 @@
     </nav>
 
     <main class="main" id="main-content">
-        <article class="blog-post">
-            <header class="blog-post-header">
-                <div class="blog-post-date">POST_DATE</div>
-                <h1 class="blog-post-title">POST_TITLE</h1>
-            </header>
-
-            <div class="blog-post-content" id="post-content">
-                <!-- Markdown content will be loaded here -->
-                <p>Loading post...</p>
+        <section class="resume-section">
+            <div class="resume-header">
+                <h1>Now</h1>
+                <div class="divider-wine"><span></span></div>
             </div>
-
-            <div style="margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--color-border);">
-                <a href="../index.html" style="color: var(--color-gold);">&larr; Back to all posts</a>
+            <div class="resume-content" id="now-content">
+                {{CONTENT}}
             </div>
-        </article>
+        </section>
     </main>
 
     <footer class="footer">
@@ -123,28 +117,6 @@
                 localStorage.setItem('theme', newTheme);
             });
         })();
-    </script>
-    <script>
-        // Replace POST_SLUG with your post's filename (without extension)
-        fetch('../../content/blog/POST_SLUG.md')
-            .then(response => {
-                if (!response.ok) throw new Error('Post not found');
-                return response.text();
-            })
-            .then(markdown => {
-                // Strip frontmatter if present
-                if (markdown.startsWith('---')) {
-                    const parts = markdown.split('---');
-                    if (parts.length >= 3) {
-                        markdown = parts.slice(2).join('---').trim();
-                    }
-                }
-                document.getElementById('post-content').innerHTML = marked.parse(markdown);
-            })
-            .catch(error => {
-                document.getElementById('post-content').innerHTML =
-                    '<p>Error loading post content.</p>';
-            });
     </script>
 </body>
 </html>
