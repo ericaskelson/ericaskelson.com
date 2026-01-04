@@ -89,6 +89,7 @@ html[data-theme="dark"] {
 html {
     font-size: 16px;
     scroll-behavior: smooth;
+    overflow-y: scroll; /* Always show scrollbar to prevent layout shift */
 }
 
 body {
@@ -563,6 +564,14 @@ html[data-theme="dark"] .hero {
 
 .resume-header h1 {
     margin-bottom: var(--spacing-xs);
+}
+
+/* Dark mode: add backdrop behind page headers for better contrast */
+html[data-theme="dark"] .resume-header h1 {
+    display: inline-block;
+    padding: 0.2em 0.6em;
+    background: rgba(26, 26, 26, 0.85);
+    border-radius: var(--border-radius);
 }
 
 /* Divider spacing after page titles - actual divider is in HTML */
