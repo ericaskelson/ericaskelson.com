@@ -4,13 +4,9 @@
 
 [LinkedIn](https://www.linkedin.com/in/eric-askelson-asa-maaa-1a304855/) | [Actuarial Directory](https://www.actuarialdirectory.org/?searchType=11&discloseId=uNJGDoBmNQ3t1rTtCoeemQ%3D%3D) | [eric.askelson@protective.com](mailto:eric.askelson@protective.com) | [eraskelson@gmail.com](mailto:eraskelson@gmail.com) | (205) 937-4151
 
----
-
 ## Professional Summary
 
 Actuary with 12+ years of experience at Protective Life, progressing from actuarial student to Director. Combines deep technical expertise in valuation and financial reporting with a passion for automation, process improvement, and developing talent. Known for building scalable training programs and introducing modern development practices to actuarial workflows.
-
----
 
 ## Experience
 
@@ -43,8 +39,6 @@ Built foundational actuarial skills while driving automation and process improve
 - **Experience Measurement:** Implemented variance analysis tool decomposing experience into mortality, non-death terminations, and other drivers - enabled clear communication of results to leadership
 - **Version Control Pioneer:** Researched and implemented Git for actuarial model change tracking; developed gitignore configurations, clean/smudge filters, best-practice documentation, and training program for PolySystems users
 
----
-
 ### University of Alabama at Birmingham
 *Birmingham, Alabama*
 
@@ -52,8 +46,6 @@ Built foundational actuarial skills while driving automation and process improve
 
 - Tutored students in Algebra, Calculus, Differential Equations, Linear Algebra, and Abstract Algebra
 - Proctored examinations for undergraduate mathematics courses
-
----
 
 ## Education
 
@@ -65,14 +57,10 @@ GPA: 3.9 | Specialization: Analysis, Probability & Statistics
 **University of Alabama at Birmingham** | 2008 – 2012
 GPA: 4.0 | Summa Cum Laude | Honors in Mathematics | Presidential Honors
 
----
-
 ## Technical Skills
 
 **Languages & Tools:** SQL, PowerQuery, Power BI, Excel/VBA, Git
 **Actuarial Platforms:** PolySystems
 **Areas of Expertise:** Life insurance valuation, LDTI, FAS97, reinsurance modeling, experience analysis, process automation
-
----
 
 *Last updated: December 2025*

@@ -32,4 +32,4 @@ See below for a few author recommendations painfully excerpted from the much lon
 
 ## Why This Website
 
-I bought this *domain* to have a little corner of the internet that is truly my own. But I'd be lying if I didn't credit [Claude Code](https://code.claude.com/docs/en/overview) with building most of this site - the power of these AI tools is no less remarkable than the speed at which they are improving. 
+I bought this domain to have a little corner of the internet that is truly my own. But I'd be lying if I didn't credit [Claude Code](https://code.claude.com/docs/en/overview) with building most of this site - the power of these AI tools is no less remarkable than the speed at which they are improving. 
